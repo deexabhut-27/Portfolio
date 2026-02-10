@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    a{
+        @apply hover:text-lime-500 m-1 cursor-pointer rounded-full ease-out active:scale-110 p-1 shadow-lime-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+    }
+    .container-fluid-sm {
+        @apply lg:px-[80px] px-[40px]
+    }
+}
+@layer components {
+ 
+}
+@layer utilities{
+    html{
+        @apply overflow-x-hidden;
+    }
+    .container-fluid {
+        @apply xl:max-w-[1024px] xl:mx-auto  mx-[50px] max-sm:mx-[30px]; 
+    }
+    body{
+        @apply overflow-x-hidden;
+    }
+    p, h1, h2{
+        @apply break-words;
+    }
+    .main-logo-company img{
+        @apply w-[300px] h-[150px];
+    }
+    .main-logo-company{
+        @apply flex justify-center mx-auto;
+    }
+    .main-logo-company svg {
+        @apply fill-white;
+    }
+}

@@ -1,0 +1,79 @@
+/* Custom color overrides for original lime green */
+:root {
+  --custom-green: #84cc16;
+}
+
+/* Override all lime color variations with original lime green */
+.text-lime-300 {
+  color: #bef264 !important;
+}
+
+.text-lime-400 {
+  color: #a3e635 !important;
+}
+
+.text-lime-500 {
+  color: #84cc16 !important;
+}
+
+.bg-lime-400 {
+  background-color: #a3e635 !important;
+}
+
+.bg-lime-400\/10 {
+  background-color: rgb(163 230 53 / 0.1) !important;
+}
+
+.bg-lime-500 {
+  background-color: #84cc16 !important;
+}
+
+.bg-lime-500\/20 {
+  background-color: rgb(132 204 22 / 0.2) !important;
+}
+
+.border-lime-500\/20 {
+  border-color: rgba(132, 204, 22, 0.2) !important;
+}
+
+.shadow-lime-400\/10 {
+  --tw-shadow-color: rgba(163, 230, 53, 0.1) !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+.shadow-lime-500 {
+  --tw-shadow-color: #84cc16 !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+.shadow-lime-500\/20 {
+  --tw-shadow-color: rgba(132, 204, 22, 0.2) !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+.shadow-lime-500\/5 {
+  --tw-shadow-color: rgba(132, 204, 22, 0.05) !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+.shadow-lime-500\/50 {
+  --tw-shadow-color: rgba(132, 204, 22, 0.5) !important;
+  --tw-shadow: var(--tw-shadow-colored) !important;
+}
+
+.hover\:text-lime-400:hover {
+  color: #a3e635 !important;
+}
+
+.hover\:text-lime-500:hover {
+  color: #84cc16 !important;
+}
+
+.hover\:bg-lime-400:hover {
+  background-color: #a3e635 !important;
+}
+
+/* Update hover-lift shadow to use original lime green */
+.hover-lift:hover {
+  box-shadow: 0 20px 40px rgba(163, 230, 53, 0.15) !important;
+}

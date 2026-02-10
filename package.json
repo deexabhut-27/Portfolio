@@ -1,0 +1,25 @@
+{
+  "name": "deexa-bhut-portfolio",
+  "version": "1.0.0",
+  "description": "Shopify developer portfolio showcasing e-commerce development skills, projects, and experience in building scalable online stores with Shopify Liquid, themes, and custom apps.",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch",
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [
+    "shopify",
+    "portfolio",
+    "e-commerce",
+    "web-development",
+    "liquid",
+    "frontend",
+    "accessibility"
+  ],
+  "author": "Deexa Bhut",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
