@@ -69,7 +69,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Fira+Code:wght@300..700&display=swap"
     rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -371,6 +370,23 @@
 
     ::-webkit-scrollbar-thumb:hover {
       background: linear-gradient(135deg, #84cc16, #65a30d);
+    }
+
+    /* Typed.js styling */
+    #typed {
+      color: #eaeaea;
+      min-height: 1.2em;
+      display: inline-block;
+    }
+
+    .typed-cursor {
+      color: #a3e635;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
     }
   </style>
 </head>
@@ -1431,10 +1447,11 @@
                   </p>
 
                   <p class="mt-4 text-sm font-bold lg:mt-8">
-                    © 2026 Deexa Bhut
+                    2026 Deexa Bhut
                   </p>
 
-                  <script src="src/js/global.js"></script>
+                  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                  <script src="../src/js/global.js"></script>
                   <script>
                     var swiper = new Swiper(".swiper-container", {
                       slidesPerView: 1.2,
