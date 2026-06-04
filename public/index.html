@@ -208,11 +208,12 @@
       transform: translateX(-50%);
     }
 
-@media (max-width: 380px) {
-    .main-icon-container {
-  max-width: 300px;
+    @media (max-width: 380px) {
+      .main-icon-container {
+        max-width: 300px;
+      }
     }
-}
+
     /* Icon Wrapper */
     .main-icon-wrapper {
       background: white;
@@ -385,8 +386,16 @@
     }
 
     @keyframes blink {
-      0%, 50% { opacity: 1; }
-      51%, 100% { opacity: 0; }
+
+      0%,
+      50% {
+        opacity: 1;
+      }
+
+      51%,
+      100% {
+        opacity: 0;
+      }
     }
   </style>
 
@@ -617,7 +626,7 @@
               </a>
               <a target="_blank"
                 class="hover:text-primary-500 m-1 cursor-pointer rounded-full ease-out active:scale-110 p-1 shadow-lime-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                href="https://github.com/deexabhut-27/"> 
+                href="https://github.com/deexabhut-27/">
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
                   height="20" width="20" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -853,6 +862,148 @@
       </div>
       </div>
     </section>
+
+
+    <!-- Chrome Extension Section -->
+    <section id="extension" class="relative z-30 mx-auto overflow-x-hidden rounded-xl bg-b-light mb-0 mt-10 pb-0"
+      aria-labelledby="extension-heading">
+      <div class="container mx-auto">
+        <h2 id="extension-heading" class="p-4 text-xl font-medium text-lime-400 md:p-10 md:pt-0 md:pb-5">Build Log
+          <span class="text-white"> (
+            ) { </span>
+        </h2>
+
+        <div class="flex flex-col place-items-center text-white p-4 sm:ml-4 md:ml-6 md:px-10">
+          <div class="bg-b-dark dark w-full max-w-6xl rounded-xl p-6 md:p-10 shadow-md shadow-lime-500/5 hover-lift">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
+
+              <!-- Left column: logo, title, status, stats -->
+              <div class="flex flex-col lg:border-r lg:border-lime-500/20 lg:pr-10">
+                <!-- Logo box -->
+                <div
+                  class="mx-auto lg:mx-0 mb-6 flex h-36 w-36 items-center justify-center rounded-2xl border border-lime-500/30 bg-lime-400/5">
+                  <img src="images/icon128.png" width="112" height="112" alt="PixelAudit Chrome extension logo"
+                    class="h-28 w-28 object-contain" />
+                </div>
+
+                <h3 class="gradient-text text-3xl font-bold mb-2 text-center lg:text-left">PixelAudit</h3>
+                <p class="text-xs font-medium uppercase tracking-wider text-white/60 mb-5 text-center lg:text-left">
+                  My First Published Extension</p>
+
+                <!-- Live status pill -->
+                <div
+                  class="mb-8 inline-flex items-center justify-center gap-2 rounded-md border border-lime-500/30 px-4 py-2 mx-auto lg:mx-0">
+                  <span class="pulse-animation inline-block h-2 w-2 rounded-full bg-lime-400"></span>
+                  <span class="text-xs font-medium uppercase tracking-wide text-lime-300">Live on Chrome Web
+                    Store</span>
+                </div>
+
+                <!-- Stats -->
+                <div class="space-y-4">
+                  <div class="flex items-center justify-between text-sm">
+                    <span class="flex items-center gap-2 text-white/60">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        class="text-lime-400">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" stroke-linecap="round" />
+                      </svg>
+                      <span class="uppercase tracking-wide text-xs">Launched</span>
+                    </span>
+                    <span class="text-white">30th May, 2026</span>
+                  </div>
+
+                  <div class="flex items-center justify-between text-sm">
+                    <span class="flex items-center gap-2 text-white/60">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        class="text-lime-400">
+                        <path d="M21 12a9 9 0 11-3-6.7M21 4v4h-4" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="uppercase tracking-wide text-xs">Status</span>
+                    </span>
+                    <span>Live</span>
+                  </div>
+
+                  <div class="flex items-center justify-between text-sm">
+                    <span class="flex items-center gap-2 text-white/60">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        class="text-lime-400">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                      <span class="uppercase tracking-wide text-xs">Type</span>
+                    </span>
+                    <span class="text-white">Chrome Extension</span>
+                  </div>
+
+                  <div class="flex items-center justify-between text-sm">
+                    <span class="flex items-center gap-2 text-white/60">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        class="text-lime-400">
+                        <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="uppercase tracking-wide text-xs">Version</span>
+                    </span>
+                    <span class="text-white">1.1.0</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right column: about, features, tech, CTA -->
+              <div class="lg:col-span-2 flex flex-col">
+
+                <!-- About -->
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="text-sm font-medium tracking-wider text-lime-400">-&gt; ABOUT THE EXTENSION</span>
+                  <span class="flex-1 border-b border-dashed border-lime-500/30"></span>
+                  <span class="h-1.5 w-1.5 rounded-full bg-lime-400/60"></span>
+                </div>
+                <p class="text-sm text-white/80 leading-relaxed mb-7">
+                  PixelAudit is a lightweight Chrome extension that helps developers and designers inspect, measure, and
+                  fine-tune web layouts directly on any page. Built for speed, accuracy, and a smoother
+                  design-to-development workflow.
+                </p>
+
+                <!-- Key Features -->
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="text-sm font-medium tracking-wider text-lime-400">-&gt; KEY FEATURES</span>
+                  <span class="flex-1 border-b border-dashed border-lime-500/30"></span>
+                  <span class="h-1.5 w-1.5 rounded-full bg-lime-400/60"></span>
+                </div>
+                <ul class="list-disc pl-5 space-y-2 mb-7 marker:text-lime-400">
+                  <li class="text-sm text-white/80">Inspect webpage elements instantly</li>
+                  <li class="text-sm text-white/80">Measure spacing and layout alignment with precision</li>
+                  <li class="text-sm text-white/80">Analyze typography and visual structure</li>
+                  <li class="text-sm text-white/80">View and convert color formats quickly</li>
+                  <li class="text-sm text-white/80">Lightweight and responsive workflow</li>
+                  <li class="text-sm text-white/80">Keyboard shortcut support for faster navigation</li>
+                  <li class="text-sm text-white/80">Clean and developer-friendly interface</li>
+                </ul>
+
+
+
+
+
+                <!-- CTA -->
+                <a href="https://chromewebstore.google.com/detail/pixelaudit/godhegdkbbnlbnmjmklomiiednjhnfeg"
+                  target="_blank" rel="noopener noreferrer"
+                  class="group inline-flex items-center gap-2 mt-auto self-start px-6 py-3 bg-lime-500 text-gray-900 font-medium rounded-lg hover:bg-lime-400 transition-all duration-300 hover:scale-105 shadow-lg shadow-lime-500/20 hover:text-black">
+                  <span>Add to Chrome</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    class="transition-transform duration-300 group-hover:translate-x-1">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <h2 class="p-4 pb-2 pt-4 text-xl font-medium text-white md:p-10 md:px-10 md:pt-10 md:pb-0">}</h2>
+      </div>
+    </section>
+
+
     <!-- Work Experience Section -->
     <section id="work" class="relative z-30 mx-auto overflow-x-hidden rounded-xl bg-b-light mb-0 mt-10 pb-0"
       aria-labelledby="work-heading">
@@ -968,6 +1119,9 @@
         <h2 class="p-4 pb-2 pt-4 text-xl font-medium text-white md:p-10 md:px-10 md:pt-10 md:pb-0">}</h2>
       </footer>
     </section>
+
+
+
     <!-- Speaking & Sessions -->
     <section class="speaking-wrap">
       <div class="container mx-auto md:px-10 px-[40px] max-sm:px-[20px]">
@@ -1003,12 +1157,10 @@
                 <div class="relative ml-0 h-full">
                   <div
                     class="absolute top-[-20%] right-[-85px] left-auto w-full z-[1] max-lg:right-[-50px] max-md:right-[-32px]">
-                    <img src="images/s1.jpg"
-                      alt="Deexa Bhut conducting internal Shopify development training session"
+                    <img src="images/s1.jpg" alt="Deexa Bhut conducting internal Shopify development training session"
                       class="max-w-[45%] w-full h-auto rounded-lg shadow-lg max-sm:max-w-[60%]" />
                   </div>
-                  <img src="images/s2.jpg"
-                    alt="Deexa Bhut presenting advanced Shopify development techniques to team"
+                  <img src="images/s2.jpg" alt="Deexa Bhut presenting advanced Shopify development techniques to team"
                     class="w-full max-w-[46%] max-sm:max-w-[65%] relative ml-auto z-[2] h-auto rounded-lg shadow-lg max-lg:mr-[70px] max-md:mr-[32px] max-sm:top-[90px]" />
                 </div>
               </div>
@@ -1067,19 +1219,19 @@
                   <p class="text-sm text-white/70">Ruparel Education Pvt.Ltd.</p>
                 </div>
               </div>
-         
-              <ul class="space-y-2 list-disc pl-5 list-inside marker:text-lime-500 marker:text-sm">
-               <li class="text-sm text-white/80">Frontend technologies (HTML5, CSS3)</li>
-               <li class="text-sm text-white/80">Developed backend skills (JavaScript, PHP)</li>
-               <li class="text-sm text-white/80">Implemented database solutions (MySQL)</li>
-              </ul>
-              </div>
-            </div>
 
+              <ul class="space-y-2 list-disc pl-5 list-inside marker:text-lime-500 marker:text-sm">
+                <li class="text-sm text-white/80">Frontend technologies (HTML5, CSS3)</li>
+                <li class="text-sm text-white/80">Developed backend skills (JavaScript, PHP)</li>
+                <li class="text-sm text-white/80">Implemented database solutions (MySQL)</li>
+              </ul>
+            </div>
           </div>
 
         </div>
-        <h2 class="p-4 pb-2 pt-4 text-xl font-medium text-white md:p-10 md:px-10 md:pt-10 md:pb-0">}</h2>
+
+      </div>
+      <h2 class="p-4 pb-2 pt-4 text-xl font-medium text-white md:p-10 md:px-10 md:pt-10 md:pb-0">}</h2>
       </div>
     </section>
     <!-- Shopify Academy Section -->
@@ -1383,20 +1535,18 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="images/cc.jpg"
                 alt="Shopify Development Certificate - Course Completion"></div>
-            <div class="swiper-slide"><img src="images/cc1.jpg"
-                alt="Advanced Shopify Liquid Development Certification"></div>
+            <div class="swiper-slide"><img src="images/cc1.jpg" alt="Advanced Shopify Liquid Development Certification">
+            </div>
             <div class="swiper-slide"><img src="images/cc2.jpg"
                 alt="Shopify Theme Development Professional Certificate"></div>
-            <div class="swiper-slide"><img src="images/cc3.jpg"
-                alt="E-commerce Development Achievement Certificate"></div>
+            <div class="swiper-slide"><img src="images/cc3.jpg" alt="E-commerce Development Achievement Certificate">
+            </div>
             <div class="swiper-slide"><img src="images/cc4.jpg" alt="Shopify App Development Certification">
             </div>
             <div class="swiper-slide"><img src="images/cc5.jpg" alt="Web Development Professional Certificate">
             </div>
-            <div class="swiper-slide"><img src="images/cc6.jpg"
-                alt="Frontend Development Excellence Certificate"></div>
-            <div class="swiper-slide"><img src="images/cc7.jpg"
-                alt="JavaScript Advanced Programming Certificate"></div>
+            <div class="swiper-slide"><img src="images/cc6.jpg" alt="Frontend Development Excellence Certificate"></div>
+            <div class="swiper-slide"><img src="images/cc7.jpg" alt="JavaScript Advanced Programming Certificate"></div>
             <div class="swiper-slide"><img src="images/cc10.jpg" alt="Digital Marketing E-commerce Certificate">
             </div>
             <div class="swiper-slide"><img src="images/cc11.jpg" alt="Full Stack Web Development Certificate">
