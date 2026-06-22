@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 typedElement.textContent = "";
 
                 new Typed("#typed", {
-                    strings: ["Shopify Wizard", "Problem Solver", "Clear Communicator", "Web Enthusiast"],
+                    strings: ["AI Driven", "Shopify Wizard", "Problem Solver", "Clear Communicator", "Web Enthusiast"],
                     typeSpeed: 50,
                     backSpeed: 30,
                     loop: true,
